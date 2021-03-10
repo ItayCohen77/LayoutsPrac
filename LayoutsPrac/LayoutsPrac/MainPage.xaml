@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutsPrac.MainPage">
+
+    <Grid BackgroundColor="#fdf8c7">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Row1" HorizontalOptions="Center"
+               Grid.Column="0"
+               Grid.Row="0"
+               TextColor="Black"
+               />
+
+        <Label Text="Row1" HorizontalOptions="Center"
+               Grid.Column="2"
+               Grid.Row="0"
+               TextColor="Black" 
+               />
+
+        <Label Text="Row2" HorizontalOptions="Center"
+               Grid.Column="0"
+               Grid.Row="1"
+               TextColor="Black" 
+                />
+
+        <Label Text="Row2" HorizontalOptions="Center"
+               Grid.Column="2"
+               Grid.Row="1"
+               TextColor="Black" 
+               />
+
+        <Label Text="Row2" HorizontalOptions="Center"
+               Grid.Column="0"
+               Grid.Row="3"
+               TextColor="Black" 
+               />
+
+        <Label Text="Row2" HorizontalOptions="Center"
+               Grid.Column="2"
+               Grid.Row="3"
+               TextColor="Black" 
+               />
+
+        <Label Text="Row3" HorizontalOptions="Center"
+               Grid.Column="0"
+               Grid.Row="4"
+               TextColor="Black" 
+               />
+
+        <Label Text="Row3" HorizontalOptions="Center"
+               Grid.Column="2"
+               Grid.Row="4"
+               TextColor="Black" 
+                />
+
+        <Button x:Name="U" Text="U" VerticalOptions="Center" HorizontalOptions="Center" 
+                Clicked="U_Clicked"
+                Grid.Column="1"
+                Grid.Row="0"
+                TextColor="Black" 
+                />
+
+        <Button x:Name="D" Text="D" VerticalOptions="Center" HorizontalOptions="Center" 
+                Clicked="D_Clicked"
+                Grid.Column="1"
+                Grid.Row="4"
+                TextColor="Black" 
+                />
+
+        <Button x:Name="R" Text="R" VerticalOptions="Center" HorizontalOptions="Center"  
+                Clicked="R_Clicked"
+                Grid.Column="2"
+                Grid.Row="2"
+                TextColor="Black" 
+                />
+
+        <Button x:Name="L" Text="L" VerticalOptions="Center" HorizontalOptions="Center" 
+                Clicked="L_Clicked"
+                Grid.Column="0"
+                Grid.Row="2"
+                TextColor="Black" 
+                />
+
+        <AbsoluteLayout BackgroundColor="White" VerticalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2">
+            
+            <Ellipse x:Name="circle" Fill="Blue"
+                     WidthRequest="50"
+                     HeightRequest="50"
+                     HorizontalOptions="Start" 
+                     AbsoluteLayout.LayoutFlags="PositionProportional"
+                     AbsoluteLayout.LayoutBounds="0.5,0.5"/>
+
+        </AbsoluteLayout>
+    </Grid>
+
+</ContentPage>
